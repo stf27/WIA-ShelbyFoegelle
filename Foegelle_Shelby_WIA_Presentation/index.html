@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        
+        <title>WIA Presentation - fullPage.js</title>
+		
+        <meta name="viewport" content="initial-scale=1">
+		
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.fullPage.js"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
+                    //Navigation
+                    menu: false,
+                    lockAnchors: false,
+                    anchors:['firstPage', 'secondPage'],
+                    navigation: false,
+                    navigationPosition: 'right',
+                    navigationTooltips: ['firstSlide', 'secondSlide'],
+                    showActiveTooltip: false,
+                    slidesNavigation: false,
+                    slidesNavPosition: 'bottom',
+
+                    //Scrolling
+                    css3: true,
+                    scrollingSpeed: 700,
+                    autoScrolling: true,
+                    fitToSection: true,
+                    fitToSectionDelay: 1000,
+                    scrollBar: false,
+                    easing: 'easeInOutCubic',
+                    easingcss3: 'ease',
+                    loopBottom: false,
+                    loopTop: false,
+                    loopHorizontal: true,
+                    continuousVertical: false,
+                    normalScrollElements: '#element1, .element2',
+                    scrollOverflow: false,
+                    touchSensitivity: 15,
+                    normalScrollElementTouchThreshold: 5,
+
+                    //Accessibility
+                    keyboardScrolling: true,
+                    animateAnchor: true,
+                    recordHistory: true,
+
+                    //Design
+                    controlArrows: true,
+                    verticalCentered: true,
+                    resize : false,
+                    sectionsColor : ['#000', '#1FDA9A'],
+                    paddingTop: '3em',
+                    paddingBottom: '10px',
+                    fixedElements: '#header, .footer',
+                    responsiveWidth: 0,
+                    responsiveHeight: 0,
+
+                    //Custom selectors
+                    sectionSelector: '.section',
+                    slideSelector: '.slide',
+
+                    //events
+                    onLeave: function(index, nextIndex, direction){},
+                    afterLoad: function(anchorLink, index){},
+                    afterRender: function(){},
+                    afterResize: function(){},
+                    afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+                    onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+                    
+                });
+            });
+        </script>
+    </head>
+    
+    <body>
+        <div id="fullpage">
+           
+            <!-- Section 0 -->
+            <div class="section active" id="section0">
+                <div>
+                    <video autoplay="" loop="" muted="" id="video">
+                        <source src="images/flowers.mp4" type="video/mp4">
+		            </video>
+                </div>
+                <div class="layer">
+                    <h1>Hello, World!</h1>
+                    <p>My name is fullScreen.js.</p>
+                </div>
+            </div>
+            
+            <!-- Section 1 -->
+            <div class="section" id="section1">
+                <div class="layer">
+                    <p>With fullScreen.js, making beautiful full screen sites is super easy!</p>       
+                </div>
+            </div>
+            
+            <!-- Section 2 -->
+            <div class="section" id="section2">
+                <div class="slide" id="slide0">
+                    <div class="layer">
+                        <p>Making a full page slider is so easy, a baby could do it!</p>
+                    </div>
+                </div>
+                <div class="slide" id="slide1">
+                    <div class="layer">
+                        <p>Who me?</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>

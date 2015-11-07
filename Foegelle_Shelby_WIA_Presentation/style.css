@@ -1,0 +1,89 @@
+/************************* CSS Reset *************************/
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    padding: 0;
+    margin: 0;
+}
+
+/************************* General CSS *************************/
+
+body {
+    font-family: arial,helvetica;
+    font-size: 50px;
+}
+
+.section {
+    text-align: center;
+    background-size: cover;
+    color: rgba(255,255,255,0.9);
+}
+
+.slide {
+    background-size: cover;
+}
+
+/************************* Section 0 CSS *************************/
+
+#section0 {
+    overflow: hidden;
+}
+
+.layer {
+    color: rgba(255,255,255,0.9);
+}
+
+#section0 .layer {
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    top: 43%;
+}
+
+#video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    background-position: center center;
+    background-size: 100% 100%;
+    object-fit: cover;
+    z-index: 3;
+    padding: 0 !important;
+}
+
+/************************* Section 1 CSS *************************/
+
+#section1 .layer {
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    top: 45%;
+}
+
+#section1 p {
+    width: 75%;
+    margin: 0 auto;
+}
+
+/************************* Section 2 CSS *************************/
+
+#section2 {
+    padding: 0 !important;
+}
+
+#section2 p {
+    font-size: 50px !important;
+    width: 75%;
+    margin: 0 auto;
+}
+
+#slide0 {
+    background-color: #EE4B3E;
+}
+
+#slide1 {
+    background-image: url(images/baby.jpg);
+    background-position: 0 40%;
+}
